@@ -1,0 +1,47 @@
+#zen-main-app-wrapper, #appMenu-popup {
+  font-family: var(--bozo-texttweaker-fontfamily) !important;
+  font-size: calc( var(--bozo-texttweaker-fontsize) * 1rem ) !important;
+  color: var(--bozo-texttweaker-fontcolor) !important;
+
+  font-weight: calc( var(--bozo-texttweaker-boldness) * 100) !important;
+  text-shadow: 0rem 0rem 0.125rem rgba(0, 0, 0, var(--bozo-texttweaker-textshadow));
+
+  letter-spacing: calc( var(--bozo-texttweaker-letterspacing) * 1rem ) !important;
+  word-spacing: calc( var(--bozo-texttweaker-wordspacing) * 1rem ) !important;
+}
+
+/* Italicize */
+@media(-moz-bool-pref: "bozo.texttweaker.italicize") {
+  #zen-main-app-wrapper { font-style: italic; }
+}
+
+/* Capitalization */
+body:has([bozo-texttweaker-capitalization="capitalize"]) {
+  text-transform: capitalize !important;
+}
+body:has([bozo-texttweaker-capitalization="lowercase"]) {
+  text-transform: lowercase !important;
+}
+body:has([bozo-texttweaker-capitalization="uppercase"]) {
+  text-transform: uppercase !important;
+}
+body:has([bozo-texttweaker-capitalization="small-caps"]) {
+  font-variant: small-caps !important;
+}
+
+/* Text Rendering */
+body:has([bozo-texttweaker-textrendering="optimizeLegibility"]) {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body:has([bozo-texttweaker-textrendering="optimizeSpeed"]) {
+  text-rendering: optimizeSpeed !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body:has([bozo-texttweaker-textrendering="uppercase"]) {
+  text-rendering: geometricPrecision !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

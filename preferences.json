@@ -1,0 +1,99 @@
+[
+  {
+    "label": "Font: ",
+    "property": "bozo.texttweaker.fontfamily",
+    "type": "string",
+    "placeholder": "Font Name",
+    "defaultValue": "auto"
+  },
+  {
+    "label": "Text Size: ",
+    "property": "bozo.texttweaker.fontsize",
+    "type": "string",
+    "placeholder": "1.00 = 100% Default",
+    "defaultValue": 1.20
+  },
+  {
+    "label": "Text Color: ",
+    "property": "bozo.texttweaker.fontcolor",
+    "type": "string",
+    "placeholder": "Color Name / #Hex Value",
+    "defaultValue": "Black"
+  },
+  {
+    "label": "Boldness: ",
+    "property": "bozo.texttweaker.boldness",
+    "type": "string",
+    "placeholder": "1 - 10",
+    "defaultValue": 5
+  },
+  {
+    "label": "Italicize",
+    "property": "bozo.texttweaker.italicize",
+    "type": "checkbox"
+  },
+  {
+    "label": "Letter Spacing: ",
+    "property": "bozo.texttweaker.letterspacing",
+    "type": "string",
+    "defaultValue": 0.015
+  },
+  {
+    "label": "Word Spacing: ",
+    "property": "bozo.texttweaker.wordspacing",
+    "type": "string",
+    "placeholder": "0 (Default)"
+  },
+  {
+    "label": "Capitalization: ",
+    "property": "bozo.texttweaker.capitalization",
+    "type": "dropdown",
+    "placeholder": "Default",
+    "defaultValue": "auto",
+    "options": [
+      {
+        "label": "Lowercase",
+        "value": "lowercase"
+      },
+      {
+        "label": "Uppercase",
+        "value": "uppercase"
+      },
+      {
+        "label": "Capitalize Words",
+        "value": "capitalize"
+      },
+      {
+        "label": "Small Capitals",
+        "value": "small-caps"
+      }
+    ]
+  },
+  {
+    "label": "Text Shadow: ",
+    "property": "bozo.texttweaker.textshadow",
+    "type": "string",
+    "placeholder": "0 (None) - 1 (Full)"
+  },
+  {
+    "label": "Text Rendering: ",
+    "property": "bozo.texttweaker.textrendering",
+    "type": "dropdown",
+    "placeholder": "Select...",
+    "defaultValue": "auto",
+    "options": [
+      {
+        "label": "Legibility",
+        "value": "optimizeLegibility"
+      },
+      {
+        "label": "Performance",
+        "value": "optimizeSpeed"
+      },
+      {
+        "label": "Precision",
+        "value": "geometricPrecision"
+      }
+    ]
+  }
+]
